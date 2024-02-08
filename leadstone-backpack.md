@@ -20,6 +20,7 @@ end
 
 %% Lead Ingot
 subgraph sg-lead-ingot [Lead Ingot]
+    direction BT
     lead-ore --> |Smelt| lead-ingot
 end
 
