@@ -15,7 +15,12 @@ leadstone-thruster[Leadstone Thruster]--> |x2| leadstone-jetpack
 
 %% Lead Plate
 subgraph sg-lead-plate [Lead Plate]
-    lead-ingot[Lead Ingot] --> |Compactor| lead-plate
+    lead-ingot --> |Compactor| lead-plate
+end
+
+%% Lead Ingot
+subgraph sg-lead-ingot [Lead Ingot]
+    lead-ore --> |Smelt| lead-ingot
 end
 
 %% Flux Capacitor
