@@ -15,7 +15,7 @@ leadstone-thruster[Leadstone Thruster]--> |x2| leadstone-jetpack
 
 %% Lead Plate
 subgraph sg-lead-plate [Lead Plate]
-    lead-ingot --> |Compactor| lead-plate
+    sg-lead-ingot --> |Compactor| lead-plate
 end
 
 %% Lead Ingot
