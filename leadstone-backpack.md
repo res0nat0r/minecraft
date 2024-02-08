@@ -7,22 +7,26 @@ flowchart BT
 
 leadstone-jetpack([Leadstone Jetpack])
 
-lead-plate([Lead Plate])
-flux-capacitor([Flux Capacitor])
-leather-strap([Leather Strap])
-leadstone-thruster([Leadstone Thruster])
-
-lead-ingot([Lead Ingot])
-hammer([Hammer])
-
 %% Tier 1
-lead-plate --> |x4| leadstone-jetpack
-flux-capacitor --> leadstone-jetpack
-leather-strap --> leadstone-jetpack
-leadstone-thruster --> |x2| leadstone-jetpack
+lead-plate[Lead Plate] --> |x4| leadstone-jetpack
+flux-capacitor[Flux Capacitor] --> leadstone-jetpack
+leather-strap[Leather Strap] --> leadstone-jetpack
+leadstone-thruster[Leadstone Thruster]--> |x2| leadstone-jetpack
 
 %% Lead Plate
-lead-ingot --> |x2| lead-plate
-hammer --> lead-plate
+subgraph sg-lead-plate [Lead Plate]
+    lead-ingot[Lead Ingot] --> |x2| lead-plate
+    hammer[Hammer] --> lead-plate
+    lead-ore[Lead Ore] -->|Smelt| lead-ingot
+end
+
+%% Flux Capacitor
+subgraph sg-flux-capacitor [Flux Capacitor]
+    lead-ingot --> |x2| flux-capacitor
+    redstone[Redstone] --> |x3| flux-capacitor
+    copper-ingot[Copper Ingot] --> flux-capacitor
+    sulfur[Sulfur] --> flux-capacitor
+end
+    
 
 ```
