@@ -10,7 +10,7 @@ leadstone-thruster([Leadstone Thruster)]
 
 
 # Tier 1
-lead-plate --> |4x| leadstone-jetpack
+lead-plate -->|4x|leadstone-jetpack
 
 
 ```
