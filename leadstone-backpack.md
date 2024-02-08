@@ -25,7 +25,7 @@ end
 
 %% Flux Capacitor
 subgraph sg-flux-capacitor [Flux Capacitor]
-    lead-ingot --> |x2| flux-capacitor
+    sg-lead-ingot --> |x2| flux-capacitor
     redstone[Redstone] --> |x3| flux-capacitor
     copper-ingot[Copper Ingot] --> flux-capacitor
     sulfur[Sulfur] --> flux-capacitor
