@@ -1,4 +1,8 @@
 ```mermaid
+---
+title: Leadstone Jetpack (Simply Jetpacks 2)
+---
+
 flowchart BT
 
 leadstone-jetpack([Leadstone Jetpack])
