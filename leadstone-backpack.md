@@ -5,6 +5,7 @@ title: Leadstone Jetpack (Simply Jetpacks 2)
 
 flowchart BT
 
+
 leadstone-jetpack([Leadstone Jetpack])
 
 %% Tier 1
@@ -28,7 +29,6 @@ subgraph sg-leather-strap [Leather Strap]
     direction BT
     sg-leather --> |x2| leather-strap[Leather Strap]
     sg-steel-plate --> leather-strap[Leather Strap]
-    sg-redstone --> xxx
 end
 
 %% Leadstone Thruster
@@ -107,6 +107,11 @@ subgraph sg-redstone-reception-coil [Redstone Reception Coil]
     direction BT
     sg-electrum-rod[Electrum Rod] --> |x3| redstone-reception-coil[Redstone Reception Coil]
     sg-redstone[Redstone] --> |x4| redstone-reception-coil[Redstone Reception Coil]
+end
+
+subgraph sg-electrum-rod [Electrum Rod]
+    direction BT
+    sg-electrum-bar[Electrum Bar] --> |File| electrum-rod[Electrum Rod]
 end
 
 ```
