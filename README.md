@@ -1,3 +1,2 @@
-# Nomifactory Processing Trees
+# Minecraft Recipe Trees
 
-- [Leadstone Backpack](leadstone-backpack.md) 
