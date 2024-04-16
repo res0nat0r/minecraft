@@ -99,8 +99,40 @@ stick -->|4x| squeezer
 plank -->|4x| squeezer
 andesite_alloy --> squeezer
 
+%% white wool
+string -->|4x| white_wool[white wool]
+
+%% white bed
+white_wool -->|3x| white_bed[white bed]
+plank -->|3x| white_bed
+
+%% iron shard
+gravel -->|sifting| iron_shard[iron shard]
+
+%% iron substrate
+iron_shard -->|2x| iron_substrate[iron substrate]
+
+%% iron plate
+iron_substrate -->|pressing| iron_plate[iron plate]
+
+%% whisk
+iron_plate -->|5x pressing| whisk
+andesite_casing -->|2x| whisk
+
+%% mechancal mixer
+cogwheel --> mechanical_mixer[mechanical mixer]
+andesite_casing --> mechanical_mixer
+whisk --> mechanical_mixer
+
+%% fence
+stick -->|2x| fence
+plank -->|4x| fence
+
+
+
+
+
 
 %%linkStyle 2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38 stroke:blue
 %%linkStyle 1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37 stroke:red
-
-```
+``
