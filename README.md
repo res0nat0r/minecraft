@@ -154,13 +154,56 @@ sand -->|sifting| glowstone_dust[glowstone dust]
 %% tree bark
 stripped_wood -->|cutting board| tree_bark[tree bark]
 
+%% straw
+crops -->|knife| straw
+
 %% organic compost
 dirt --> organic_compost[organic compost]
 straw -->|2x| organic_compost
 bone_meal -->|2x| organic_compost
 tree_bark -->|4x| organic_compost
 
+%% string
+flax -->|milling| string
 
+%% soul campfire
+flint_and_steel[flint and steel] -->|mainhand| soul_campfire[soul campfire]
+soul_sand -->|offhand| soul_campfire
+
+%% flint and steel
+flint --> flint_and_steel
+iron_plate --> flint_and_steel
+
+%% demon dream seeds
+dirt -->|sift| demon_dream_seeds[demon dream seeds]
+%% spiritfire
+flint_and_steel -->|light on fire| spirtfire
+demon_dream_seeds --> spiritfire
+
+%% otherstone
+andesite -->|spiritfire| otherstone
+
+%% otherstone slab
+otherstone -->|3x| otherstone_slab[otherstone slab]
+
+%% soul powder
+glowstone_dust -->|soulfire| soul_powder[soul powder]
+
+%% soul powder block
+soul_powder -->|4x| soul_powder_block[soul powder block]
+
+%% glowstone
+glowstone_dust -->|4x| glowstone
+
+%% glass
+sand -->|smelt| glass
+
+%% soul glass
+glass -->|soul engulfing| soul_glass[soul glass]
+
+%% soul steel block
+
+%% soul slate
 
 %%linkStyle 2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38 stroke:blue
 %%linkStyle 1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37 stroke:red
