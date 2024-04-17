@@ -1,6 +1,13 @@
 # FTB Skies Expert
 
 ```mermaid
+%%{
+init: {
+"flowchart":{
+"useMaxWidth": 0
+}
+}
+}%%
 graph LR
 
 %% soul sand 
@@ -128,8 +135,30 @@ whisk --> mechanical_mixer
 stick -->|2x| fence
 plank -->|4x| fence
 
+%% coal
+gravel -->|sifting| coal
 
+%% biomass
+bone_meal -->|4x mixing| biomass
+coal -->|mixing| biomass
 
+%% seeds
+dirt -->|sifting| seeds
+
+%% vegtable oil
+seeds -->|compactor| vegtable_oil[vegtable oil]
+
+%% glowstone dust
+sand -->|sifting| glowstone_dust[glowstone dust]
+
+%% tree bark
+stripped_wood -->|cutting board| tree_bark[tree bark]
+
+%% organic compost
+dirt --> organic_compost[organic compost]
+straw -->|2x| organic_compost
+bone_meal -->|2x| organic_compost
+tree_bark -->|4x| organic_compost
 
 
 
