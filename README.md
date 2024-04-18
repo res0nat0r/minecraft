@@ -8,6 +8,7 @@ init: {
 }
 }
 }%%
+
 graph LR
 
 %% soul sand 
@@ -201,14 +202,68 @@ sand -->|smelt| glass
 %% soul glass
 glass -->|soul engulfing| soul_glass[soul glass]
 
+%% soul steel ingot
+iron_plate -->|soul engulfing| soul_steel_ingot[soul steel ingot]
+
 %% soul steel block
+soul_steel_ingot -->|9x| soul_steel_block[soul steel block]
+
+%% blackstone
+cobblestone -->|bulk haunting| blackstone
 
 %% soul slate
-
-%% encased fan
+blackstone -->|soul engulfing| soul_slate[soul slate]
 
 %% propeller
+iron_plate -->|4x| propeller
+andesite_alloy --> propeller
 
+%% encased fan
+shaft --> encased_fan[encased fan]
+andesite_casing --> encased_fan
+propeller --> encased_fan
+
+%% sugarcane
+sand -->|sifting| sugarcane
+
+%% sugar
+sugarcane -->|squeezing| sugar
+
+%% beehive
+sugar -->|3x| beehive
+plank -->|6x| beehive
+
+
+%% soul steel pickaxe
+soul_steel_ingot -->|3x| soul_steel_pickaxe[soul steel pickaxe]
+netherrack -->|2x| soul_steel_pickaxe
+
+
+
+
+
+
+
+
+
+
+
+
+%% ########## BEEEHIVE STUFF
+%% honeycomb
+%% shears
+%% campfire
+%% advanced beehive
+%% expansion box
+
+%% ##### anvil stuff
+%% iron ingot
+%% block of iron
+%% iron_ingot -->|9x| block_of_iron[block of iron]
+%% anvil
+%% block_of_iron -->|3x| anvil
+%% iron_plate -->|4x| anvil
+%% netherrack
 
 %%linkStyle 2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38 stroke:blue
 %%linkStyle 1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37 stroke:red
