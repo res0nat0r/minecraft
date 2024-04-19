@@ -233,10 +233,53 @@ sugarcane -->|squeezing| sugar
 sugar -->|3x| beehive
 plank -->|6x| beehive
 
-
 %% soul steel pickaxe
 soul_steel_ingot -->|3x| soul_steel_pickaxe[soul steel pickaxe]
 netherrack -->|2x| soul_steel_pickaxe
+
+%% redstone
+dust -->|sifting| redstone
+
+%% nether quartz
+soul_sand -->|sifting| nether_quartz[nether quartz]
+
+%% block of quartz
+nether_quartz -->|4x| block_of_quartz[block of quartz] 
+
+%% block of redstone
+redstone -->|9x| block_of_redstone[block of redstone]
+
+%% pity machine frame
+log -->|4x| pity_machine_frame[pity machine frame]
+iron_plate -->|4x| pity_machine_frame
+block_of_redstone --> pity_machine_frame
+
+%% raw copper
+gravel -->|sifting| raw_copper[raw copper]
+
+%% copper ingot
+raw_copper -->|smelting| copper_ingot[copper ingot]
+
+%% iron sheetmetal
+iron_plate -->|4x| iron_sheetmetal[iron sheetmetal]
+
+%% iron mechanical component
+iron_plate -->|4x| iron_mechanical_component[iron mechanical component]
+copper_ingot --> iron_mechanical_component
+
+%% light engineering block
+copper_ingot --> light_engineering_block[light engineering block]
+iron_mechanical_component -->|4x| light_engineering_block
+iron_sheetmetal -->|4x| light_engineering_block
+
+%% slowmelter 9000
+block_of_redstone -->|2x| slowmelter_9000[slowmelter 9000]
+nether_quartz --> slowmelter_9000
+glass -->|2x| slowmelter_9000
+block_of_quartz -->|2x| slowmelter_9000
+pity_machine_frame --> slowmelter_9000
+light_engineering_block --> slowmelter_9000
+
 
 
 
