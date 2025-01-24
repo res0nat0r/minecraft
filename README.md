@@ -39,7 +39,7 @@ force_planks[Force Planks] -->|Pyrolyzer| liquid_force
 raw_silver[Raw Silver] -->|Crusher| silver_dust
 
 %% Raw Silver
-quicksilver[Raw Silver] -->|Super Cooling| raw_silver
+quicksilver[Quicksilver] -->|Super Cooling| raw_silver
 mana_powder[Mana Powder] -->|Super Cooling| raw_silver
 
 %% Quicksilver
