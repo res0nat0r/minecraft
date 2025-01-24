@@ -26,7 +26,7 @@ iesnium_ingot[Iesnium Ingot] -->|Metallurgic Infuser| platinum_ingot
 diamond_dust[Diamond Dust] -->|Metallurgic Infuser| platinum_ingot
 
 %% Iesnium Ingot
-isenium_dust[Isenium Dust] --> iesnium_ingot
+isenium_dust[Isenium Dust] -->|Arc Furnace| iesnium_ingot
 
 %% Isenium Dust
 liquid_force[Liquid Force] -->|Fabrication Matrix| isenium_dust
