@@ -56,6 +56,8 @@ dust[Dust] -->|Sifting| cinnabar
 
 %% END OSMIUM INGOT
 
+%% BEGIN FLUIDS
+
 %% acetaldehyde
 ethanol[Ethanol] -->|Advanced Mixer| acetaldehyde[Acetaldehyde]
 molten_silver[Molten Silver] -->|Advanced Mixer| acetaldehyde
@@ -82,4 +84,6 @@ mob[Mob] -->|Mob Slaughter Factory| pink_slime[Pink Slime]
 %% volatile redstone
 acetaldehyde -->|Thermopneumatic Processing Plant OR Fluid Mixer| volatile_redstone[Volatile Redstone]
 redstone[Redstone] -->|Thermopneumatic Processing Plant OR Fluid Mixer| volatile_redstone[Volatile Redstone]
+
+%% END FLUIDS
 ```
