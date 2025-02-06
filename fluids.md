@@ -37,4 +37,9 @@ mob[Mob] -->|Mob Slaughter Factory| pink_slime[Pink Slime]
 %% volatile redstone
 acetaldehyde -->|Thermopneumatic Processing Plant OR Fluid Mixer| volatile_redstone[Volatile Redstone]
 redstone[Redstone] -->|Thermopneumatic Processing Plant OR Fluid Mixer| volatile_redstone[Volatile Redstone]
+
+%% destabilized redstone
+%% redstone acid
+volatile_redstone -->|Fractioning Still| destabilized_redstone[Destabilized Redstone]
+volatile_redstone -->|Fractioning Still| redstone_acid[Redstone Acid]
 ```
