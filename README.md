@@ -11,8 +11,7 @@ init: {
 
 graph LR
 
-%% BEGIN OSMIUM INGOT
-
+subgraph Osmium Ingot
 %% Osmium Ingot
 osmium_dust[Osmium Dust] -->|Arc Furnace| osmium_ingot[Osmium Ingot]
 everburning_air[Everburning Air] -->|Arc Furnace| osmium_ingot
@@ -53,6 +52,7 @@ menril_log[Menril Log] -->|Mechanical Squeezer| menril_resin
 
 %% Cinnabar
 dust[Dust] -->|Sifting| cinnabar
+end
 
 %% END OSMIUM INGOT
 
