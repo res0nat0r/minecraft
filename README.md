@@ -58,11 +58,6 @@ dust[Dust] -->|Sifting| cinnabar
 
 %% BEGIN FLUIDS
 
-subgraph Acetaldehyde
-ethanol[Ethanol] -->|Advanced Mixer| acetaldehyde[Acetaldehyde]
-molten_silver[Molten Silver] -->|Advanced Mixer| acetaldehyde
-end
-
 subgraph Ethanol
 spider_eye[Spider Eye] -->|Mixing| ethanol[Ethanol]
 sugar[Sugar] -->|Mixing| ethanol
@@ -73,28 +68,48 @@ subgraph Molten Silver
 silver_ingot[Silver Ingot] -->|Magma Crucible| molten_silver
 end
 
-subgraph Biodiesel
-everburning_air[Everburning Air] -->|Mixing| biodiesel[Biodiesel]
-vegetable_oil[Vegetable Oil] -->|Mixing| biodiesel
-ethanol -->|Mixing| biodiesel
+subgraph Acetaldehyde
+ethanol[Ethanol] -->|Advanced Mixer| acetaldehyde[Acetaldehyde]
+molten_silver[Molten Silver] -->|Advanced Mixer| acetaldehyde
 end
 
 subgraph Vegetable Oil
 seeds[Seeds] -->|Compacting| vegetable_oil
 end
 
+subgraph Biodiesel
+everburning_air[Everburning Air] -->|Mixing| biodiesel[Biodiesel]
+vegetable_oil[Vegetable Oil] -->|Mixing| biodiesel
+ethanol -->|Mixing| biodiesel
+end
+
 subgraph Pink Slime
 mob[Mob] -->|Mob Slaughter Factory| pink_slime[Pink Slime]
 end
 
-
-subgraph Volatile Redstone
-acetaldehyde -->|Thermopneumatic Processing Plant OR Fluid Mixer| volatile_redstone[Volatile Redstone]
-redstone[Redstone] -->|Thermopneumatic Processing Plant OR Fluid Mixer| volatile_redstone[Volatile Redstone]
+subgraph Brine
+salt[Salt] -->|Chemical Oxidizer| gaseous_brine[Gaseous Brine]
+gaseous_brine -->|Condensentrating| brine[Brine]
 end
 
-subgraph Destabalized Redstone
+subgraph Sodium
+brine -->|Electrolytic Separator| sodium[Sodium]
+end
+
+subgraph Chlorine
+brine -->|Electrolytic Separator| chlorine[Chlorine]
+end
+
+subgraph Volatile Redstone
+acetaldehyde -->|Fluid Mixer| volatile_redstone[Volatile Redstone]
+redstone_dust[Redstone Dust] -->|Fluid Mixer| volatile_redstone[Volatile Redstone]
+end
+
+subgraph Destabilized Redstone
 volatile_redstone -->|Fractioning Still| destabilized_redstone[Destabilized Redstone]
+end
+
+subgraph Redstone Acid
 volatile_redstone -->|Fractioning Still| redstone_acid[Redstone Acid]
 end
 
