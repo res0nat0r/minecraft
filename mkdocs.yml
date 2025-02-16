@@ -3,9 +3,28 @@ site_url: https://res0nat0r.github.io/minecraft
 repo_url: https://github.com/res0nat0r/minecraft
 theme:
   name: material
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Nunito
   features:
     - navigation.instant
     - navigation.instant.prefetch
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Dark Mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Light Mode
 markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
