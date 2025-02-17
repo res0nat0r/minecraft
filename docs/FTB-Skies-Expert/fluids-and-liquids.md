@@ -1,4 +1,4 @@
-# Fluids
+# Fluids and Liquids
 
 ```mermaid
 %%{
@@ -50,6 +50,10 @@ end
 
 subgraph Chlorine
 brine -->|Electrolytic Separator| chlorine[Chlorine]
+end
+
+subgraph Liquid Chlorine
+chlorine -->|Condensentrating| liquid_chlorine[Liquid Chlorine]
 end
 
 subgraph Volatile Redstone

@@ -7,9 +7,15 @@ theme:
     repo: fontawesome/brands/github
   font:
     text: Nunito
+  extra_css:
+    - stylesheets/extra.css
   features:
     - navigation.instant
     - navigation.instant.prefetch
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
   palette:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
