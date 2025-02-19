@@ -19,7 +19,7 @@ everburning_air[Everburning Air] -->|Arc Furnace| osmium_ingot
 platinum_dust[Platinum Dust] -->|Centrifugal Separator| osmium_dust
 end
 
-subgraph Iesnium
+subgraph Iesnium Ingot
 %% Iesnium Ingot
 isenium_dust[Isenium Dust] -->|Arc Furnace| iesnium_ingot
 
