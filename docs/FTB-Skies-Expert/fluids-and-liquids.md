@@ -80,7 +80,7 @@ force_gem[Force Gem] -->|Advanced Mixer| force_infused_biodiesel
 end
 
 subgraph Liqueified Source
-gaseous_source[Gaseous Source] -->|Condensentrating| liqueified_source[Liqueified Source]
+gaseous_source[Gaseous Source] <-->|Condensentrating| liqueified_source[Liqueified Source]
 end
 
 subgraph Crude Oil
