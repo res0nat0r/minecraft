@@ -90,4 +90,15 @@ end
 subgraph Fuel
 crude_oil -->|Advanced Mixer| fuel[Fuel]
 end
+
+subgraph Liquid Ethylene
+ethanol -->|Advanced Mixer| liquid_ethylene[Liquid Ethylene]
+sulfur_dust[Sulfur Dust] -->|Advanced Mixer| liquid_ethylene
+end
+
+subgraph Polyethylene
+liquid_ethylene -->|Advanced Mixer| polyethylene[Polyethylene]
+latex[Latex] -->|Advanced Mixer| polyethylene
+end
+
 ```
