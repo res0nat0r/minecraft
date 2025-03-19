@@ -101,4 +101,8 @@ liquid_ethylene -->|Advanced Mixer| polyethylene[Polyethylene]
 latex[Latex] -->|Advanced Mixer| polyethylene
 end
 
+subgraph Quantum Fluid
+ender_pearl[Ender Pearl] -->|Mixer| quantum_fluid[Quantum Fluid]
+liqueified_source[Liqueified Source] -->|Mixer| quantum_fluid
+end
 ```
