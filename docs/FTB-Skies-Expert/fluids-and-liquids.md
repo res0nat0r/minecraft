@@ -105,4 +105,30 @@ subgraph Quantum Fluid
 ender_pearl[Ender Pearl] -->|Mixer| quantum_fluid[Quantum Fluid]
 liqueified_source[Liqueified Source] -->|Mixer| quantum_fluid
 end
+
+subgraph Oxygen
+water -->|Electrolytic Separator| oxygen[Oxygen]
+end
+
+subgraph Hydrogen
+water -->|Electrolytic Separator| hydrogen[Hydrogen]
+end
+
+subgraph Sulfur Dioxide
+sulfur_dust -->|Chemical Oxidizer| sulfur_dioxide[Sulfur Dioxide]
+end
+
+subgraph Sulfur Trioxide
+oxygen -->|Chemical Infuser| sulfur_trioxide[Sulfur Trioxide]
+sulfur_dioxide -->|Chemical Infuser| sulfur_trioxide
+end
+
+subgraph Water Vapor
+water -->|Decondensentrating| water_vapor[Water Vapor]
+end
+
+subgraph Sulfuric Acid
+sulfur_trioxide -->|Chemical Infuser| sulfuric_acid[Sulfuric Acid]
+water_vapor -->|Chemical Infuser| sulfuric_acid
+end
 ```
