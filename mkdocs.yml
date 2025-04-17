@@ -7,6 +7,10 @@ theme:
     repo: fontawesome/brands/github
   font:
     text: Nunito
+  extra:
+    analytics:
+      provider: google
+      property: G-YQBCWMP6WS
   extra_css:
     - stylesheets/extra.css
   features:
@@ -19,14 +23,14 @@ theme:
   palette:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: black
+      primary: dark-blue
       accent: orange
       toggle:
         icon: material/brightness-7
         name: Dark Mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: black
+      primary: dark-blue
       accent: orange
       toggle:
         icon: material/brightness-4
